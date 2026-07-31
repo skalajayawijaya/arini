@@ -83,6 +83,8 @@ if (loveButton) {
         alert("🌻 Untuk Arini (Cil), semoga harimu selalu seindah bunga matahari ❤️");
 
     });
+
+    }
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
 
