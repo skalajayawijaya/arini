@@ -84,7 +84,7 @@ if (loveButton) {
 
     });
 
-    }
+}
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
 
