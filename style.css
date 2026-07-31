@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(#ffd86b,#ffb347,#ff7e5f);
+    color:white;
+    overflow-x:hidden;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.glass{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    padding:40px;
+    border-radius:25px;
+    width:90%;
+    max-width:700px;
+    box-shadow:0 10px 40px rgba(0,0,0,.25);
+}
+
+.hero h1{
+    font-size:70px;
+    font-family:'Great Vibes',cursive;
+    color:#fff;
+}
+
+.subtitle{
+    margin-top:20px;
+    font-size:20px;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    background:#FFD54F;
+    color:#333;
+    font-size:18px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.garden{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.garden h2{
+    margin-bottom:40px;
+}
+
+.flowers{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.flower{
+    width:80px;
+    height:80px;
+    background:radial-gradient(circle,#5c3b00 20%,#ffeb3b 21%);
+    border-radius:50%;
+    position:relative;
+    animation:sway 3s ease-in-out infinite;
+}
+
+.flower::before,
+.flower::after{
+    content:"";
+    position:absolute;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+
+.flower::before{
+    transform:rotate(45deg);
+}
+
+.flower::after{
+    transform:rotate(90deg);
+}
+
+@keyframes sway{
+    0%{transform:rotate(-3deg);}
+    50%{transform:rotate(3deg);}
+    100%{transform:rotate(-3deg);}
+}
+
+footer{
+    text-align:center;
+    padding:50px;
+}
